@@ -1,0 +1,99 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV Cadastro e Login</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    </head>
+    <body>
+        <!--Elemento Pai - Container-->
+    <div class="container">
+        <!--First Content-->
+      <div class=" content first-content">
+          <!--First Column-->
+       <div class="first-column">
+           <h2 class="title title-primary">Bem vindo de Volta!</h2>
+           <p class="description description-primary">Para se manter conectado</p>
+           <p class="description description-primary">Logue-se com seus dados</p>
+           <button id="signin" class="btn btn-primary">Login</button>
+       </div>
+
+       <!--Second Column-->
+       <div class="second-column">
+           <h2 class="title title-second">Criar Conta</h2>
+           <!--Social Media-->
+           <div class="social-media">
+               <ul class="list-social-media">
+                   <a href="" class="link-social-media"><li class="item-social-media"><i class="fab fa-facebook-f"></i></li></a>
+                   <a href="" class="link-social-media"><li class="item-social-media"><i class="fab fa-google-plus-g"></i></li></a>
+                   <a href="" class="link-social-media"><li class="item-social-media"><i class="fab fa-linkedin-in"></i></li></a>
+               </ul>
+           </div><!--Social Media-->
+           <p class="description description-second">Ou use seu E-mail para cadastro</p>
+           <!--Formulário de cadastro por e-mail-->
+           <form class="form" method="POST" action="projeto2.php">
+               <label class="label-input">
+                    <i class="far fa-user icon-modify"></i>
+                    <input type="text" placeholder="Nome de Usuário" name="nome" required>
+               </label>
+
+                <label for="" class="label-input">
+                    <i class="far fa-envelope icon-modify"></i>
+                    <input type="email" placeholder="E-mail" name="email" required>
+                </label>
+
+                <label for="" class="label-input">
+                    <i class="fas fa-lock icon-modify"></i>
+                    <input type="password" placeholder="Senha" name="senha" required>
+                </label>
+               <button class="btn btn-second">Cadastre</button>
+           </form>
+       </div><!--Second Column-->   
+    </div><!--Fim First Content-->
+
+
+        <!--Second Content-->
+      <div class="content second-content">
+        <!--First Column-->
+     <div class="first-column">
+         <h2 class="title title-primary">Olá Amigo(a)</h2>
+         <p class="description description-primary">Insira seus dados</p>
+         <p class="description description-primary">E inicie sua jornada conosco</p>
+         <button id="signup" class="btn btn-primary">Cadastre</button>
+     </div>
+
+     <!--Second Column-->
+     <div class="second-column">
+         <h2 class="title title-second">Logue-se com as redes</h2>
+         <!--Social Media-->
+         <div class="social-media">
+            <ul class="list-social-media">
+                <a href="" class="link-social-media"><li class="item-social-media"><i class="fab fa-facebook-f"></i></li></a>
+                <a href="" class="link-social-media"><li class="item-social-media"><i class="fab fa-google-plus-g"></i></li></a>
+                <a href="" class="link-social-media"><li class="item-social-media"><i class="fab fa-linkedin-in"></i></li></a>
+            </ul>
+        </div><!--Social Media-->
+         <p class="description description-second">Ou use seu endereço de e-mail</p>
+         <!--Formulário de login por e-mail-->
+         <form class="form" method="POST" action="login2.php">
+             <label for="" class="label-input">
+                 <i class="far fa-envelope icon-modify"></i>
+                 <input type="email" name="email" placeholder="E-mail">
+             </label>
+
+             <label for="" class="label-input">
+                 <i class="fas fa-lock icon-modify"></i>
+                 <input type="password" name="senha"  placeholder="Senha">
+             </label>
+             <a href="#" id="password">Esqueceu sua senha?</a>
+            <button class="btn btn-second">Login</button>
+            </form>
+     </div><!--Second Column-->
+      </div><!--Fim Second Content-->
+  </div>
+  <script src="JS/app.js"></script>
+    </body>
+    </html>

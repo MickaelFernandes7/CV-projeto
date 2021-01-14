@@ -1,0 +1,151 @@
+    * {padding: 0;
+       margin: 0; 
+       box-sizing: border-box;}
+    
+       body{font-family: Arial;
+            background-size:100%;}
+
+    /*Configuração do header do site*/
+
+    /*Declaração de cores do link/botão*/
+    :root{--cor--primaria--sucess:rgb(250, 252, 251);
+      --cor--hover--sucess: rgb(31, 182, 107);
+      --cor--secundaria--sucess: rgb(13, 173, 93); 
+}
+
+
+    header{display: flex;
+         height:150px;
+        width: 100%;
+        justify-content: space-between;
+        background-color:#55af9b ;}
+
+    #projeto{padding-top: 10px;
+    padding-left: 15px;
+    color: white;}
+
+    ul{ display: flex;
+         list-style: none;
+         text-decoration: none;
+        padding-top: 55px;
+        padding-right: 35px;}
+
+    /*Configuração dos ícones das paginas php*/
+    #user{color:#fff;
+         padding-right: 75px;
+         font-size: 20px;}
+
+    /*Configuração dos botões*/
+    .btn{border: solid 1px #fff;
+        padding:16px 16px 16px 16px;
+        margin: 13px 13px 13px 13px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background .3s;
+        border-radius: 5px;
+    }
+
+
+
+    .btn-sucess{background-color: var(--cor--primaria--sucess);
+        outline: none;
+        color: #55af9b
+    }
+
+    /*Efeito Hover link/botão*/
+    .btn-sucess:hover{background-color: var(--cor--hover--sucess); color: #fff;}
+
+    /*Transição de cor ao clique do botão/link*/
+    .btn-sucess:active{background-color: var(--cor--secundaria--sucess);}
+
+    /*Fim da Configuração dos botões*/
+
+    /*Fim da configuração do header do site*/
+
+
+    /*Main da Página Inicial do Site*/
+
+    #mainindex{height: 1300px;}
+
+    #secequipe{display: flex; padding-top: 30px; padding-left: 20px;}
+    #plataforma{padding-left: 10px; 
+        padding-top: 60px;
+        font-size: 20px; 
+        font-family: Arial, sans-serif;
+        color: mediumseagreen;
+        }
+
+    .titulocursos{text-align: center; 
+        margin-top: 35px;}
+
+    .titulo{background-color: #55af9b; 
+        color: white; 
+        border: solid 2px black; 
+        border-radius: 10px;}
+
+
+    /*Footer do site*/
+
+    /*Container Elemento Pai*/
+    footer{height: 270px;
+        width: 100%;
+        background-color: #55af9b;
+        color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    /*Configuração da Flexbox do lado direito*/
+    #sec2{background-color:#55af9b; 
+        height: 230px; 
+        width:490px; 
+        text-align: left; 
+        margin-top: 35px; 
+        margin-right: 55px;
+        align-content: center; 
+        align-items:center ;}
+
+    /*Textos da flexbox direita*/
+    .sobre{text-align: left;
+         padding-left: 5px;
+          font-size: 18px;}
+    #texto{text-align: left;
+         padding-left: 5px;
+          font-size: 16px;}
+
+    /*Icones Flexbox direita*/
+    .li{text-align: center;
+         line-height: 50px;}
+    #facebook{padding-left: 10px;
+         padding-right: 5px;}
+    #gmail{padding-left: 10px;}
+
+    /*Flexbox Esquerda*/
+    #sec3{display:flex;
+         flex-direction: column; 
+         height: 230px; 
+         width: 300px; 
+         background-color: #55af9b; 
+         margin-top: 25px;}
+
+    #localizacao{margin-top: 55px;
+         margin-left: 15px;}
+    #endereco{text-align:right;
+         padding-left:60px;}
+    #telefone{margin-top:15px;
+         margin-left: 10px;}
+
+    /*Fim do Footer do site*/
+
+    /*Sobre Html*/
+
+    #mainsobre{height:830px; color: #55af9b;}
+    #teamwork{margin-top:20px; margin-left: 10px;}
+
+    figcaption{font-family: Arial;
+         font-size: 20px;
+         padding-top: 10px;
+         padding-left: 13px;}
+
+    /*Fim do Sobre Html*/

@@ -1,0 +1,317 @@
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+    
+    /*Reset do CSS*/
+    *{padding: 0; margin: 0; box-sizing: border-box;}
+    body{font-family: 'Open Sans', sans-serif;}
+
+    /*Estilização do CSS da página*/
+
+    /*Elemento Pai corresponde a tela como um todo, o espalo que está sendo utilizado*/
+    /*100vh . VH significa View Port Height, é a altura do viewport, serve para ocupar 100 da página*/
+    .container{display: flex;
+        height: 100vh; 
+        justify-content: center;
+        align-items: center;
+        background-color: #ecf0f1;}
+
+    /*Configuração da class content que conta para os dois contents*/
+    .content{background-color: #fff;
+        border-radius: 15px;
+        width: 960px;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+            }
+
+    .content::before{content: "";
+        position: absolute;
+        background-color:#58af9b ;
+        width: 40%;
+        height: 100%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    
+        left: 0;}
+
+
+    /*Configuração e estilização da First Content*/
+    .first-content{display: flex;
+        }
+
+    .first-content .second-column{z-index: 11;}
+
+    /*Configuração dos títulos primeira e segunda coluna*/
+    .title{font-size:28px;
+        font-weight: bold;
+        text-transform: capitalize;}
+    
+    .title-primary{color: #fff}
+
+    .title-second{color: #58af9b;}
+
+    /*Configuração dos textos da primeira e segunda coluna*/
+    .description{font-size: 14px;
+        font-weight: 300; 
+        line-height: 30px;}
+
+    .description-primary{color: #fff;}
+    .description-second{color: #58af9b;}
+
+    /*Configuração dos botões da primeira e segunda coluna*/
+    .btn{border-radius: 15px;
+        text-transform: uppercase;
+        color: #fff; 
+        font-size: 10px;
+        padding: 10px 50px;
+        cursor: pointer; 
+        font-weight: bold;
+        width:150px;
+        align-self: center;
+        border-width:0;
+
+        /*margin-top: 1rem;*/}
+
+    .btn-primary{background-color: transparent;
+            border: solid 1px #fff;}
+
+    .btn-primary:hover{background-color: #fff; color: #58af9b; transition: background-color .5s;}
+
+    .btn-second{background-color:#58af9b;
+        border: 1px solid #58af9b; transition: background-color .5s;}
+    
+    .btn-second:hover{background-color: #fff; color: #55af9b;}
+
+    /*Configuração e estilização da primeira coluna(coluna esquerda) da First Content*/
+    .first-column{text-align: center;
+        width: 40%;
+        z-index: 10;}
+        
+    /*Configuração e estilização da segunda coluna(coluna direita) da First Content*/    
+    .second-column{width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
+
+    /*alinhamento horizontal dos ícones e configuração da coluna direita da first content*/
+    .list-social-media{display: flex; 
+        list-style-type: none;
+        }
+
+
+    /*.social-media{margin: 1rem 0;}*/
+
+    
+
+    .item-social-media{border: 1px solid #ecf0f1; 
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        color: #95a5a6;}
+
+    .link-social-media:not(:first-child){
+        margin-left:10px;
+        }
+
+    .link-social-media:hover .item-social-media{transition: background-color .5s;}
+
+    .link-social-media:hover .item-social-media{background-color: #58af9b; color: #fff}
+
+    /*Configuração do Formulário First Content.
+    alinhamento horizontal dos elementos do formulário(user, email, password) da coluna direita da first content*/
+    .form{display: flex;
+        flex-direction: column;
+        width: 55%;}
+
+    input:-webkit-autofill 
+    {    
+        -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
+        -webkit-text-fill-color: #000 !important;}
+
+    .form input{ height: 45px;
+        width: 100%;
+        border:none;
+        background-color: #ecf0f1;
+        }
+
+    .label-input{background-color: #ecf0f1;
+        display: flex;
+        align-items: center ;
+        margin: 8px;}
+
+    .icon-modify{color: #7f8c8d; 
+        padding:0 5px ;}
+
+    /*Configuração e estilização da Second Content*/
+    .second-content{position: absolute; 
+        display: flex;}
+    
+    .second-content .first-column{order: 2;
+        z-index: -1;}
+
+    .second-content .second-column{order: 1; 
+        z-index: -1;}
+
+    /*Configuração do Forgot your password*/
+    #password{color:#34495e; 
+        font-size:14px; 
+        margin: 15px 0;
+        text-align: center;}
+
+    /*o primeiro conteúdo some(First Content)*/
+    .sign-in-js .first-content .first-column,
+    .sign-in-js .first-content .second-column{z-index: -1;}
+
+    /*o segundo conteúdo aparece(Second Content)*/
+    
+    .sign-in-js .second-content .second-column{z-index: 11;}
+    .sign-in-js .second-content .first-column{z-index: 13;}
+
+    .sign-in-js .content::before{
+        left: 60%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius:0;
+        border-top-right-radius:15px;
+        border-bottom-right-radius:15px;
+        animation: slidein 3s;
+
+        z-index: 12;
+    }
+
+    /*o segundo conteúdo some(Second Content)*/
+    .sign-up-js .second-content .first-column,
+    .sign-up-js .second-content .second-column{z-index: -1;}
+
+    
+    .sign-up-js .first-content .second-column{z-index: 11;}
+    .sign-up-js .first-content .first-column{z-index: 13;}
+
+    .sign-up-js .content::before {
+        animation: slideout 3s;
+        z-index: 12;
+    }
+
+    /*Animação CSS, Slide(Transição do fundo de um lado para o outro)*/
+
+                /* Não é uma palavra reservada*/
+    @keyframes slidein {
+        from {
+            left: 0;
+            width: 40%;
+        }
+
+        25%{
+            left: 5%;
+            width: 50%;
+        }
+
+        50%{
+            left: 25%;
+            width: 60%;
+
+
+        }
+
+        75%{
+            left: 45%;
+            width: 50%;
+        }
+
+        to{
+            left: 60%;
+            width: 40%;
+        }
+
+    }
+
+    @keyframes slideout {
+        from {
+            left: 60%;
+            width: 40%;
+        }
+
+        25%{
+            left: 45%;
+            width: 50%;
+        }
+
+        50%{
+            left: 25%;
+            width: 60%;
+
+
+        }
+
+        75%{
+            left: 5%;
+            width: 50%;
+        }
+
+        to{
+            left: 0;
+            width: 40%;
+        }
+
+    }
+
+    /*Animação CSS de efeito de deslocamento*/
+
+    /*Deslocamento do contéudo do content:before*/
+    .sign-in-js .first-content .second-column{z-index: -1;
+    position: relative;
+    animation: deslocamentoEsquerdo 3s;}
+    
+    @keyframes deslocamentoEsquerdo {
+        from{
+            left:0;
+            opacity: 1;
+            z-index: 12;
+        }
+
+        25%{
+            left: -80px;
+            opacity: .5;
+        }
+
+        50%{
+            left: -100px;
+            opacity: .2;
+        }
+
+        to{
+            left:-110px;
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+
+    .sign-up-js .second-content .second-column{
+        position: relative;
+        z-index:-1;
+        animation: deslocamentoDireito 3s;
+    }
+
+    @keyframes deslocamentoDireito {
+        from{
+            left:0;
+            z-index: 12;
+        }
+
+        25%{
+            left: 80px;
+            opacity: .5;
+        }
+
+        50%{
+            left: 100px;
+            opacity: .2;
+        }
+
+        to{
+            left:110px;
+            z-index: -1;
+        }
+    }
